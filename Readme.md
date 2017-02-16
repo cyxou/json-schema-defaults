@@ -88,6 +88,12 @@ var json = defaults({
 }
 ```
 
+Optionally specify the `opts` object as a third parameter, with the boolean `explicitOnly`
+property which defaults to `false`. If specified, the defaults will be generated
+only for those parts of the schema where the `default` property is explicitly
+specified. Otherwise the defaults won't be generated. This is helpful for arrays as
+sometimes it is preferred to not generate a default item of the array.
+
 For more examples, see the tests.
 
 
